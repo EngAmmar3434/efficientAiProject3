@@ -1,9 +1,38 @@
+@'
+# Python environments
 .venv/
+.venv_new/
+.venv_old/
+venv/
+env/
+
+# Python cache
 __pycache__/
+*.py[cod]
+*.pyo
+
+# Jupyter
 .ipynb_checkpoints/
-*.pyc
+
+# Secrets
 .env
+.env.*
+
+# Dataset
 data/*
 !data/.gitkeep
+
+# Model checkpoints
+checkpoints/
+*.pt
+*.pth
+*.onnx
+
+# Experimental results
 results/*
 !results/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+'@ | Set-Content -Path .gitignore -Encoding utf8
