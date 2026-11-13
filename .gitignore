@@ -36,3 +36,6 @@ results/*
 .DS_Store
 Thumbs.db
 '@ | Set-Content -Path .gitignore -Encoding utf8
+
+
+results_res/
